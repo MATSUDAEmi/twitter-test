@@ -1,0 +1,136 @@
+{
+  "slideArea": [
+    {
+      "movie": false,
+      "img": "img/img-slide-size.png",
+      "url": "http://www.asahi.co.jp/call/",
+      "title": "おはようコールABC"
+    },
+    {
+      "movie": true,
+      "second": 30,
+      "id": "toVtRvsbAy8",
+      "title": "【新番組】「キラキラ☆プリキュアアラモード」予告～キャラクター紹介編～"
+    },{
+      "movie": false,
+      "img": "img/img-slide-size.png",
+      "url": "http://www.asahi.co.jp/call/",
+      "title": "おはようコールABC"
+    },
+    {
+      "movie": true,
+      "second": 15,
+      "id": "Q6KyVaCnUg0",
+      "title": "女性アナウンサー大会「パネルクイズ アタック25」3月5日（日）放送"
+    }
+  ],
+  "bgArea": {
+    "bgChangeTime":{
+      "0:00": "night",
+      "6:00": "morning",
+      "12:00": "afternoon",
+      "18:00": "evening",
+      "23:00": "midnight"
+    },
+    "night": {
+      "bg": "img/bg-night-body.png",
+      "title": "img/bg-night-title.png",
+      "contents": [{
+        "img": "img/bg-content-mon.png",
+        "url": "sugirutv/"
+      },{
+        "img": "img/bg-content-tue.png",
+        "url": "abciee/"
+      }, {
+        "img": "img/bg-content-wed.png",
+        "url": "ann/"
+      },{
+        "img": "img/bg-content-thu.png",
+        "url": "beauty/"
+      },{
+        "img": "img/bg-content-fri.png",
+        "url": "call/mikuji/"
+      }]
+    },
+    "morning": {
+      "bg": "img/bg-night-body.png",
+      "title": "img/bg-night-title.png",
+      "contents": [{
+        "img": "img/bg-content-mon.png",
+        "url": "sugirutv/"
+      },{
+        "img": "img/bg-content-tue.png",
+        "url": "abciee/"
+      }, {
+        "img": "img/bg-content-wed.png",
+        "url": "ann/"
+      },{
+        "img": "img/bg-content-thu.png",
+        "url": "beauty/"
+      },{
+        "img": "img/bg-content-fri.png",
+        "url": "call/mikuji/"
+      }]
+    },
+    "afternoon": {
+      "bg": "img/bg-night-body.png",
+      "title": "img/bg-night-title.png",
+      "contents": [{
+        "img": "img/bg-content-mon.png",
+        "url": "sugirutv/"
+      },{
+        "img": "img/bg-content-tue.png",
+        "url": "abciee/"
+      }, {
+        "img": "img/bg-content-wed.png",
+        "url": "ann/"
+      },{
+        "img": "img/bg-content-thu.png",
+        "url": "beauty/"
+      },{
+        "img": "img/bg-content-fri.png",
+        "url": "call/mikuji/"
+      }]
+    },
+    "evening": {
+      "bg": "img/bg-night-body.png",
+      "title": "img/bg-night-title.png",
+      "contents": [{
+        "img": "img/bg-content-mon.png",
+        "url": "sugirutv/"
+      },{
+        "img": "img/bg-content-tue.png",
+        "url": "abciee/"
+      }, {
+        "img": "img/bg-content-wed.png",
+        "url": "ann/"
+      },{
+        "img": "img/bg-content-thu.png",
+        "url": "beauty/"
+      },{
+        "img": "img/bg-content-fri.png",
+        "url": "call/mikuji/"
+      }]
+    },
+    "midnight": {
+      "bg": "img/bg-night-body.png",
+      "title": "img/bg-night-title.png",
+      "contents": [{
+        "img": "img/bg-content-mon.png",
+        "url": "sugirutv/"
+      },{
+        "img": "img/bg-content-tue.png",
+        "url": "abciee/"
+      }, {
+        "img": "img/bg-content-wed.png",
+        "url": "ann/"
+      },{
+        "img": "img/bg-content-thu.png",
+        "url": "beauty/"
+      },{
+        "img": "img/bg-content-fri.png",
+        "url": "call/mikuji/"
+      }]
+    }
+  }
+}

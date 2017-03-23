@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<div>test</div>
+
+  <script src="js/oauth.js"></script>
+  <script src="js/sha1.js"></script>
+  <script src="js/getTwitterAPI.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script>
+
+  var options = {
+      method: "GET",
+      apiURL: "https://api.twitter.com/1.1/friends/list.json",
+      count: 10,
+      consumerKey: "FEJXJJbzC9XE4W1GnHKbyzSue",
+      consumerSecret: "ArbbpqCaOxKAEQ6xbb7P9WDxgx8yukDAeXdiPN2l1PKYTqbQSE",
+      accessToken: "42576285-MwtV2XLgxr5d1NRjCiJci7SCVEitY4jkZEMjKByR3",
+      tokenSecret: "2C08RqPUiCVBPwWX70jerlqOIv5EacF2WQLKVGTDVDXN1"
+  };
+  function getResult(data){
+    console.log('data', data)
+  }
+  function getTwitter() {
+
+      var accessor = {
+          consumerSecret: options.consumerSecret,
+          tokenSecret: options.tokenSecret
+      };
+
+      var message = {
+          method: options.method,
+          action: options.apiURL,
+          parameters: {
+              count: 1,
+              oauth_version: "1.0",
+              oauth_signature_method: "HMAC-SHA1",
+              oauth_consumer_key: options.consumerKey,
+              oauth_token: options.accessToken,
+              callback: "getResult",
+          }
+      };
+      OAuth.setTimestampAndNonce(message);
+      OAuth.SignatureMethod.sign(message, accessor);
+      var url = OAuth.addToURL(message.action, message.parameters);
+
+      $.ajax({
+        type: 'GET',
+        dataType: 'jsonp',
+        jsonp: 'jsoncallback',
+        cache: true,
+        url: url
+      });
+  }
+  getTwitter()
+
+  </script>
+</body>
+</html>
