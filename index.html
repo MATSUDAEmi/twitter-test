@@ -26,7 +26,8 @@
       consumerKey: "FEJXJJbzC9XE4W1GnHKbyzSue",
       consumerSecret: "ArbbpqCaOxKAEQ6xbb7P9WDxgx8yukDAeXdiPN2l1PKYTqbQSE",
       accessToken: "42576285-MwtV2XLgxr5d1NRjCiJci7SCVEitY4jkZEMjKByR3",
-      tokenSecret: "2C08RqPUiCVBPwWX70jerlqOIv5EacF2WQLKVGTDVDXN1"
+      tokenSecret: "2C08RqPUiCVBPwWX70jerlqOIv5EacF2WQLKVGTDVDXN1",
+      callback: 'getResult'
   };
   function getResult(data){
     console.log('data', data)
@@ -44,6 +45,7 @@
           parameters: {
               count: 1,
               oauth_version: "1.0",
+              user_id: '42576285',
               oauth_signature_method: "HMAC-SHA1",
               oauth_consumer_key: options.consumerKey,
               oauth_token: options.accessToken,
